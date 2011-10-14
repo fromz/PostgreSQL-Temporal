@@ -1,7 +1,7 @@
 EXTENSION    = temporal
-EXTVERSION   = 0.7.0
+EXTVERSION   = 0.7.1
 
-DATA         = sql/temporal--0.7.0.sql
+DATA         = sql/temporal--0.7.1.sql
 DATA_built   = temporal.sql
 DOCS         = doc/html/abstract.html    \
                doc/html/index.html       \
