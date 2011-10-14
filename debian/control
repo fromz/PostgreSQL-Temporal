@@ -1,0 +1,40 @@
+Source: temporal
+Section: misc
+Priority: extra
+Maintainer: Dimitri Fontaine <dim@tapoueh.org>
+Build-Depends: debhelper (>= 7.0.50), postgresql-server-dev-all (>= 118)
+Standards-Version: 3.9.2
+Vcs-Git: git://github.com/jeff-davis/PostgreSQL-Temporal.git
+Vcs-browser: https://github.com/jeff-davis/PostgreSQL-Temporal
+Homepage: https://github.com/jeff-davis/PostgreSQL-Temporal#readme
+
+Package: postgresql-8.4-temporal
+Architecture: any
+Depends: ${shlibs:Depends}
+Recommends: postgresql-8.4
+Description: Temporal project for PostgreSQL, period datatype
+ Tools for maintaining and querying time data in PostgreSQL. It includes
+ temporal data types, functions, operators, opclasses (for indexing),
+ and triggers. Also includes documentation for best practices, examples,
+ and useful queries.
+
+Package: postgresql-9.0-temporal
+Architecture: any
+Depends: ${shlibs:Depends}
+Recommends: postgresql-9.0
+Description: Temporal project for PostgreSQL, period datatype
+ Tools for maintaining and querying time data in PostgreSQL. It includes
+ temporal data types, functions, operators, opclasses (for indexing),
+ and triggers. Also includes documentation for best practices, examples,
+ and useful queries.
+
+Package: postgresql-9.1-temporal
+Architecture: any
+Depends: ${shlibs:Depends}
+Recommends: postgresql-9.1
+Description: Temporal project for PostgreSQL, period datatype
+ Tools for maintaining and querying time data in PostgreSQL. It includes
+ temporal data types, functions, operators, opclasses (for indexing),
+ and triggers. Also includes documentation for best practices, examples,
+ and useful queries.
+

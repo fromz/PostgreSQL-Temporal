@@ -1,0 +1,12 @@
+temporal (1:0.7.1-1) unstable; urgency=low
+
+  * New upstream release and location
+
+ -- Dimitri Fontaine <dim@tapoueh.org>  Fri, 14 Oct 2011 13:08:09 +0200
+
+temporal (0.20080525-1) unstable; urgency=low
+  
+  * Initial release
+
+ -- Dimitri Fontaine <dim@tapoueh.org>  Tue, 22 Apr 2008 11:42:09 +0200
+

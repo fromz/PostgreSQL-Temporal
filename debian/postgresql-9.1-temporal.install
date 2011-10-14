@@ -1,0 +1,3 @@
+debian/temporal-9.1/temporal.so usr/lib/postgresql/9.1/lib
+sql/temporal--0.7.0.sql usr/share/postgresql/9.1/extension
+temporal.control usr/share/postgresql/9.1/extension

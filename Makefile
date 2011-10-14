@@ -1,13 +1,18 @@
 EXTENSION    = temporal
-EXTVERSION   = $(shell grep default_version $(EXTENSION).control | sed -e "s/default_version[[:space:]]*=[[:space:]]*'\([^']*\)'/\1/")
+EXTVERSION   = 0.7.0
 
-DATA         = $(filter-out $(wildcard sql/*--*.sql),$(wildcard sql/*.sql))
-DATA_built   = $(patsubst %.sql.in,%.sql,$(wildcard *.sql.in))
-DOCS         = $(wildcard doc/html/*.html)
-TESTS        = $(wildcard test/sql/*.sql)
-REGRESS      = $(patsubst test/sql/%.sql,%,$(TESTS))
+DATA         = sql/temporal--0.7.0.sql
+DATA_built   = temporal.sql
+DOCS         = doc/html/abstract.html    \
+               doc/html/index.html       \
+               doc/html/index.dist.html  \
+               doc/html/reference.html   \
+               doc/html/tutorial.html
+TESTS        = test/sql/period.sql
+REGRESS      = period
 REGRESS_OPTS = --inputdir=test --load-language=plpgsql
-MODULES      = $(patsubst %.c,%,$(wildcard src/*.c))
+MODULES      = temporal
+
 PG_CONFIG    = pg_config
 PG91         = $(shell $(PG_CONFIG) --version | grep -qE " 8\.| 9\.0" && echo no || echo yes)
 

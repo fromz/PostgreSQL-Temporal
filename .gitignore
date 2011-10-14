@@ -1,0 +1,8 @@
+.pc
+debian/postgresql-8.3-temporal/
+debian/postgresql-8.4-temporal/
+debian/postgresql-9.0-temporal/
+debian/postgresql-9.1-temporal/
+debian/patches
+debian/temporal-*
+debian/*debhelper.log

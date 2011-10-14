@@ -1,0 +1,2 @@
+debian/temporal-8.4/temporal.so usr/lib/postgresql/8.4/lib
+debian/temporal-8.4/temporal.sql usr/share/postgresql/8.4/contrib
