@@ -6,3 +6,5 @@ debian/postgresql-9.1-temporal/
 debian/patches
 debian/temporal-*
 debian/*debhelper.log
+debian/*substvars
+debian/files
